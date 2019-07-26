@@ -135,17 +135,14 @@ actions:
       type: object
       contentType: application/json
       properties:
-        available:
-          help: Returns boolean for availability.
-          type: boolean
-        currency:
-          help: The price in currency.
+        success:
+          help: Returns true/false.
           type: string
-        domain:
-          help: The searched domain name.
+        message:
+          help: Notification sent message or error message if occurred.
           type: string
-        price:
-          help: The purchase amount of domain.
+        statusCode:
+          help: Returns http status code.
           type: int
 environment:
   API_KEY:
